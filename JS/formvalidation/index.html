@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="student-form">
+        <form onsubmit="return validate()">
+            <h2 ><b>Login Form</b></h2>
+            <p>
+                <label for="sname">Name</label>
+                <input type="text" name="fname" id="fname" placeholder="FirstName">
+                <input type="text" name="fname" id="lname" placeholder="LastName">
+            </p>
+            <p>
+                <label for="email_id">Email</label>
+                <input type="email" name="email_id" id="email_id" placeholder="Email">
+            </p>
+            <p>
+                <label for="pnumber">Phone Number</label>
+                <input type="number" name="pnumber" id="pnumber" size="10" placeholder="10-digit number">
+            </p>
+            <p>
+                <label for="user_password">Password</label>
+                <input type="password" name="user_password" id="user_password" placeholder="password">
+            </p>
+            <input type="submit" onclick="displayTable()" id="toDisplayTable">
+            <input type="reset">
+        </form>
+    </div>
+    <div id="student-display">
+        <h2 style="text-align: center;"><b >OUTPUT SCREEN</b></h2>
+        <table border="3" align="center" id="table-body">
+            <tr>
+                <th>SECTION</th>
+                <th colspan="3" width="500">USER DETAILS</th>
+            </tr>
+            <tr>
+                <th>USERNAME</th>
+                <td colspan="3" id="full-name">Ramakrishna</td>
+            </tr>
+            <tr>
+                <th>EMAIL ID</th>
+                <td colspan="3">ramakrishna@gmail.com</td>
+            </tr>
+            <tr>
+                <th>PHONE NUMBER</th>
+                <td colspan="3">9441887896</td>
+            </tr>
+            <tr>
+                <th>PASSWORD</th>
+                <td colspan="3">********</td>
+            </tr>
+            <tr>
+                <th>GENDER</th>
+                <td colspan="3">MALE</td>
+            </tr>
+            <tr>
+                <th>CURRENT ADDRESS</th>
+                <td colspan="3">Fortune stays PG, Arumbakkam, Chennai</td>
+            </tr>
+            <tr>
+                <th>DATE OF BIRTH</th>
+                <td colspan="3">21/03/2002</td>
+            </tr>
+            <tr>
+                <th>TIME</th>
+                <td colspan="3">10:10 AM</td>
+            </tr>
+            <tr>
+                <th>LANGUAGES</th>
+                <td>
+                    <ul>
+                        <li>TELUGU</li>
+                        <li>English</li>
+                    </ul>
+                </td>
+                
+            </tr>
+            <tr>
+                <th>FIELD OF INTREST</th>
+                <td>
+                    <ul>
+                        <li>BADMINTON</li>
+                        <li>CRICKET</li>
+                        <li>MUSIC</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th >UPLOAD YOUR PICTURE</th>
+                <td colspan="3"><img src="Images\WIN_20240322_12_43_21_Pro.jpg" width="100" height="100"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
